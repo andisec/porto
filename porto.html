@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Andi Taufiq Zuhair Pangeran</title>
+    <!-- Menambahkan FontAwesome untuk ikon media sosial -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Pengaturan Dasar & Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Bagian Header / Hero */
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 4rem 1rem;
+            text-align: center;
+        }
+        
+        /* Gaya untuk Foto Profil */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #1abc9c;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            margin-bottom: 1.5rem;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            color: #1abc9c;
+            font-weight: 500;
+        }
+
+        /* Kontainer Utama */
+        .container {
+            max-width: 1000px;
+            margin: -2rem auto 0;
+            padding: 0 2rem;
+            position: relative;
+            flex: 1; /* Membuat konten mengisi ruang agar footer tetap di bawah */
+        }
+
+        section {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #1abc9c;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Grid Keahlian */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-tag {
+            background: #e8f8f5;
+            color: #16a085;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border: 1px solid #1abc9c;
+        }
+
+        /* Grid Proyek */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #2980b9;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        ul.cert-list {
+            list-style-type: none;
+        }
+
+        ul.cert-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul.cert-list li::before {
+            content: '✓';
+            color: #1abc9c;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Footer & Media Sosial */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #2c3e50;
+            color: #bdc3c7;
+            margin-top: 2rem;
+        }
+
+        .social-links {
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            color: #ffffff;
+            background-color: #34495e;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        /* Warna hover khusus untuk masing-masing platform */
+        .social-links a:hover {
+            transform: translateY(-3px);
+        }
+        .social-links a.ig:hover { background-color: #e1306c; }
+        .social-links a.fb:hover { background-color: #1877f2; }
+        .social-links a.in:hover { background-color: #0077b5; }
+        .social-links a.gh:hover { background-color: #333333; }
+
+        /* Responsif untuk layar HP */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .profile-img { width: 120px; height: 120px; }
+            .container { padding: 0 1rem; margin-top: 0; }
+            section { padding: 1.5rem; border-radius: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Ganti "foto-saya.jpg" dengan nama file foto asli milikmu -->
+        <img src="./mr robot.jpeg" alt="Foto Profil Andi Taufiq" class="profile-img">
+        
+        <h1>Andi Taufiq Zuhair Pangeran</h1>
+        <p>Mahasiswa Teknologi Informasi | Cybersecurity & Frontend Enthusiast</p>
+    </header>
+
+    <div class="container">
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>Halo! Saya adalah mahasiswa program studi Teknologi Informasi di Institut Teknologi Tangerang Selatan (ITTS). Saya memiliki minat mendalam dalam pengembangan antarmuka web (Frontend) dan keamanan siber, terutama dalam analisis kerentanan jaringan serta OSINT. Sehari-hari saya terbiasa melakukan eksplorasi dengan sistem operasi Xubuntu Linux dan antusias dalam memecahkan masalah teknis.</p>
+        </section>
+
+        <section id="keahlian">
+            <h2>Keahlian Teknikal</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML5 & CSS3</span>
+                <span class="skill-tag">Responsive Layout Design</span>
+                <span class="skill-tag">Cybersecurity (XSS & Recon)</span>
+                <span class="skill-tag">Linux (Xubuntu & Kali)</span>
+                <span class="skill-tag">Python & Termux Scripting</span>
+                <span class="skill-tag">UI/UX Research</span>
+            </div>
+        </section>
+
+        <section id="proyek">
+            <h2>Proyek & Pengalaman</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Reconsec</h3>
+                    <p>Repositori open-source di GitHub yang dikembangkan untuk menyediakan alat-alat pengintaian keamanan siber (reconnaissance) dan pemetaan permukaan serangan jaringan.</p>
+                </div>
+                <div class="project-card">
+                    <h3>KantinKu (UI/UX Research)</h3>
+                    <p>Melakukan riset terhadap 120 responden, merancang user persona, peta perjalanan pelanggan, dan alur aplikasi untuk sistem pemesanan makanan berbasis web.</p>
+                </div>
+                <div class="project-card">
+                    <h3>BOCIL TERMUX</h3>
+                    <p>Proyek pembuatan konten edukasi teknologi format vertikal yang membahas tentang operasi command-line di Android dan konfigurasi lingkungan Python secara portabel.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sertifikasi">
+            <h2>Sertifikasi & Pencapaian</h2>
+            <ul class="cert-list">
+                <li><strong>Introduction to Information Security</strong> - Cyber Academy</li>
+                <li><strong>Build a free website with WordPress</strong> - Coursera</li>
+                <li>Menyelesaikan 33 Level OverTheWire Bandit Wargame</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <!-- Bagian Ikon Media Sosial -->
+        <div class="social-links">
+            <!-- Ganti tanda '#' dengan link asli akun media sosialmu -->
+            <a href="#" target="_blank" class="ig" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" class="fb" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" class="in" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/andisec" target="_blank" class="gh" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+        <p>&copy; 2026 Andi Taufiq Zuhair Pangeran. Dibuat di Tangerang Selatan.</p>
+    </footer>
+
+</body>
+</html>
